@@ -33,7 +33,6 @@ fun TaskListScreen(navController: NavController, taskList: List<Task>) {
                 } },
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
-//                        Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "Back")
                         Image(painterResource(id = R.drawable.image_2),
                             contentDescription = "Back",
                             modifier = Modifier.size(40.dp))

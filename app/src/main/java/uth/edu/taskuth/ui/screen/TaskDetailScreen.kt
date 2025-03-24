@@ -3,6 +3,7 @@
 package uth.edu.taskuth.ui.screen
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -44,7 +45,7 @@ fun TaskDetailScreen(task: Task, navController:NavController) {
                 navigationIcon = {
                     IconButton(onClick ={navController.popBackStack() }) {
                         Image(painterResource(id = R.drawable.image_2), contentDescription = "Back",
-                            modifier = Modifier.size(40.dp))
+                            modifier = Modifier.size(40.dp).clickable { navController.navigate("list") })
                     }
                 },
 
